@@ -46,6 +46,7 @@ public class BooleanChecks {
     // Returns true when word begins with prefix.
     // to-do: implement hasPrefix
     public boolean hasPrefix(String word, String prefix) {
-        return (word.substring(0, prefix.length()).equals(prefix));
+        return word.length() > prefix.length()
+                && (word.substring(0, prefix.length()).equals(prefix));
     }
 }
